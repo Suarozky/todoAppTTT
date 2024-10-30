@@ -19,7 +19,7 @@ async function bootstrap() {
       console.error('Error during Data Source initialization', err);
     });
 
-  await app.listen(3000);
+  await app.listen(3001);
 
   Logger.log(`Server running on http://localhost:3001`, 'Main');
 }

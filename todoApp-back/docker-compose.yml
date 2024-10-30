@@ -6,7 +6,7 @@ services:
       - POSTGRES_USER=postgres # Nombre de usuario para la base de datos PostgreSQL.
       - POSTGRES_PASSWORD=postgres # Contraseña del usuario de la base de datos PostgreSQL.
     ports:
-      - "5429:5432" 
+      - "5432:5432" 
     volumes:
       - db:/var/lib/postgresql/data # Montaje de un volumen para persistir los datos de la base de datos en el directorio /var/lib/postgresql/data dentro del contenedor.
 

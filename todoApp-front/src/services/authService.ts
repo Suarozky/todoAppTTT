@@ -18,6 +18,7 @@ export const login = async (email: string, password: string) => {
         // Guarda el userId y userName en localStorage
         localStorage.setItem("userId", data.user.id);
         localStorage.setItem("userName", data.user.userName);
+        localStorage.setItem("accessToken", data.accessToken);
 
         return data; // Retorna la respuesta completa
     } catch (error) {
@@ -44,6 +45,7 @@ export const register = async (email: string, password: string, username: string
         // Guarda el userId y userName en localStorage
         localStorage.setItem("userId", data.user.id);
         localStorage.setItem("userName", data.user.userName);
+        localStorage.setItem("accessToken", data.accessToken);
 
         return data; // Retorna la respuesta después del registro
     } catch (error) {
